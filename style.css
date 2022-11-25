@@ -1,69 +1,86 @@
-* {box-sizing: border-box;}
 
-body {background-color: gray;}
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  background-color: gray;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%; 
+  font-family: Vertana;
+}
+
 
 #nav {
-    color: white;
-    list-style: none; 
-    position: fixed; 
-    margin-top: -10px; width: 100%; 
-    font-family: Product Sans; 
-    font-size: 20; 
-    text-align:center;
-    padding-left:0px; 
+  color: white;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  position: relative;
+  background: black;
+  width: 100%;
+  text-align: center;
 }
 
-#img {
-  background-color: black;
+#logo {
+    display: inline;
+    border: solid;
+    vertical-align: top;
+  border-color: black
 }
 
-#nav li{ 
-width: 200px; 
-height: 60px; 
-display: inline; 
-text-align: center; 
-padding-top: 5px; 
-background-color: black; 
-font-size: 30px; }
+#li{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  margin: 10px 10px 10px; 
+  padding-top: 10px;
+  background-color: black; 
+  font-size: 25px; }
     
-.column { 
-        float: left;
-        padding: 10px; 
-        height: 300px;
+.column {
+  float: left;
+  padding: 10px; 
+        height: 600px;
         }
         
 .left {
-width: 25%; }
+  text-align: -webkit-center;
+  margin-left: 10%;
+  width: 20%; }
 
 .right {
-width: 75%; }
+  text-align: -webkit-center;
+  margin-right: 10%;
+  position: relative; 
+  width: 60%; }
 
-
-.row:after { 
-            content: "";
-            display: table; 
-            clear: both;
-           }      
-
-button 
-    {
-    position: absolute;
+.row {
+  background-color: #c5bfbf;
+}
+   
+button{
+    color: white;
     border: none;
     border-radius: 6px;
-    color: white;
     padding: 8px 10px;
     font-size: 7px;
     background-color: #B00000;
-    margin-left: 50%;
-    margin-right: 50%;
-   
-    width: 15%; 
+    width: 130px; 
     font-family: Product Sans; 
     }
 
+.button {
+  justify-content: center;
+  position: absolute;
+  bottom: 2%;
+  
+}
+
 footer 
     {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
